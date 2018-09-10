@@ -4,7 +4,7 @@ RSpec.feature "Users can create new projects" do
   scenario "with valid attributes" do
     visit "/"
     
-    clicK_link "New Project"
+    click_link "New Project"
     
     fill_in "Name", with: "Sublime Text 3"
     fill_in "Description", with: "A text editor for everyone"
