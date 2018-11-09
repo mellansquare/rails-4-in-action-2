@@ -63,6 +63,7 @@ RSpec.configure do |config|
   config.include Warden::Test::Helpers, type: :feature
   config.after(type: :feature) { Warden.test_reset! }
   
+  # Headless firefox setup
   Capybara.register_driver :firefox_headless do |app|
     options = ::Selenium::WebDriver::Firefox::Options.new
     options.args << '--headless'
