@@ -7,6 +7,7 @@ before_action :set_project, only: [:show, :edit, :update]
   
   def show
     authorize @project, :show?
+    @tickets = @project.tickets
   end
   
   def edit

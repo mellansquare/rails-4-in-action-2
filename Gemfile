@@ -60,4 +60,5 @@ group :test do
   gem 'selenium-webdriver'
   gem 'rubocop-rspec'
   gem 'geckodriver-helper'
+  gem 'searcher', github: 'radar/searcher'
 end
