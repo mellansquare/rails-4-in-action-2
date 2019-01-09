@@ -1,19 +1,19 @@
 Rails.application.routes.draw do
   namespace :admin do
-  get 'users/index'
+    get 'users/index'
   end
 
   namespace :admin do
-    root "application#index"
-    
-    resources :projects, only: [:new, :create, :destroy]
+    root 'application#index'
+
+    resources :projects, only: %i[new create destroy]
     resources :users do
       member do
         patch :archive
       end
     end
-    
-    resources :states, only: [:index, :new, :create] do
+
+    resources :states, only: %i[index new create] do
       member do
         get :make_default
       end
@@ -21,16 +21,16 @@ Rails.application.routes.draw do
   end
 
   devise_for :users
-  root "projects#index"
-  
-  resources :projects, only: [:index, :show, :edit, :update] do
+  root 'projects#index'
+
+  resources :projects, only: %i[index show edit update] do
     resources :tickets do
       collection do
         get :search
       end
     end
   end
-  
+
   resources :tickets, only: [] do
     resources :comments, only: [:create]
     resources :tags, only: [] do
@@ -39,6 +39,6 @@ Rails.application.routes.draw do
       end
     end
   end
-  
-  resources :attachments, only: [:show, :new]
+
+  resources :attachments, only: %i[show new]
 end

@@ -3,7 +3,7 @@ class TagsController < ApplicationController
     @ticket = Ticket.find(params[:ticket_id])
     @tag = Tag.find(params[:id])
     authorize @ticket, :tag?
-    
+
     @ticket.tags.destroy(@tag)
     head :ok
   end

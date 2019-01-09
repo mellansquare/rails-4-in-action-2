@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
@@ -23,11 +22,11 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'bootstrap-sass'
-gem 'font-awesome-rails'
-gem 'simple_form'
-gem 'devise'
-gem 'pundit'
 gem 'carrierwave'
+gem 'devise'
+gem 'font-awesome-rails'
+gem 'pundit'
+gem 'simple_form'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -54,11 +53,12 @@ end
 
 group :test do
   gem 'capybara'
-  gem 'factory_bot_rails'
   gem 'database_cleaner'
-  gem 'puma'
-  gem 'selenium-webdriver'
-  gem 'rubocop-rspec'
+  gem 'email_spec'
+  gem 'factory_bot_rails'
   gem 'geckodriver-helper'
+  gem 'puma'
+  gem 'rubocop-rspec'
   gem 'searcher', github: 'radar/searcher'
+  gem 'selenium-webdriver'
 end
