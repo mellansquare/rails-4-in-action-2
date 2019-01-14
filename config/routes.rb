@@ -5,14 +5,12 @@ Rails.application.routes.draw do
 
   namespace :admin do
     root 'application#index'
-
     resources :projects, only: %i[new create destroy]
     resources :users do
       member do
         patch :archive
       end
     end
-
     resources :states, only: %i[index new create] do
       member do
         get :make_default
@@ -27,6 +25,10 @@ Rails.application.routes.draw do
     resources :tickets do
       collection do
         get :search
+      end
+      
+      member do
+        post :watch
       end
     end
   end
