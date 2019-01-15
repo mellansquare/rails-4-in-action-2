@@ -27,6 +27,8 @@ gem 'devise'
 gem 'font-awesome-rails'
 gem 'pundit'
 gem 'simple_form'
+gem 'fog'
+gem 'fog-aws'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
