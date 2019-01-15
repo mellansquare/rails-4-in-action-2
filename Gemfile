@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby "2.4.5"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
@@ -31,6 +32,7 @@ gem 'simple_form'
 gem 'fog'
 gem 'fog-aws'
 gem 'rails_12factor', group: :production
+gem 'puma', group: :production
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
