@@ -5,7 +5,6 @@ ruby "2.3.4"
 gem 'rails', '4.2'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: [:development, :test]
-gem 'pg', group: :production
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -31,8 +30,13 @@ gem 'pundit'
 gem 'simple_form'
 gem 'fog'
 gem 'fog-aws'
-gem 'rails_12factor', group: :production
-gem 'puma', group: :production
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
+gem 'puma'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
