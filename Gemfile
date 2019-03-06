@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby "2.4.5"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.5'
+gem 'rails', '4.2'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: [:development, :test]
 gem 'pg', group: :production
@@ -63,7 +63,6 @@ group :test do
   gem 'email_spec'
   gem 'factory_bot_rails'
   gem 'geckodriver-helper'
-  gem 'puma'
   gem 'rubocop-rspec'
   gem 'searcher', github: 'radar/searcher'
   gem 'selenium-webdriver'
