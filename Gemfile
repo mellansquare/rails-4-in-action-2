@@ -37,6 +37,7 @@ group :production do
 end
 
 gem 'puma'
+gem 'searcher', github: 'radar/searcher'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -68,6 +69,5 @@ group :test do
   gem 'factory_bot_rails'
   gem 'geckodriver-helper'
   gem 'rubocop-rspec'
-  gem 'searcher', github: 'radar/searcher'
   gem 'selenium-webdriver'
 end
