@@ -2,5 +2,12 @@ language: ruby
 rvm: 2.3.4p301
 script: bundle exec rspec
 before_install:
-  - export DISPLAY=.99.0
-  - sh -e /etc/init.d/xvfb start
+- export DISPLAY=.99.0
+- sh -e /etc/init.d/xvfb start
+deploy:
+  provider: heroku
+  api_key:
+    secure: rdaKm4W5sYtfrYL5FF7ftOLrfPdJIviMMWIk8/cVKCA5X7C61IzF5eEDohGf3n7FJZql2WYo3ezFFUF8PsJM/ZOjP4vigIN1U35HoZMPQwxujJAONt3xjFsI3DhhDFgMgd9DS8GE5MMAxxh3kKSvAG3EI6vySR9xafsTpdJkcKtzGnua/vgoAM3+hftOgQmpXsRPjeSCVluE6s9AGO8A+onsoR4f6wwwOGDnE30iX2ycBO5C1MBsXqT253wEEKW+/pjOsyRFSrAOdN0Jy8m11qRkqzJSn34ZqovkVfpK+7sueKmRYfhorhCO8UiJR/fKn0lp46wPoiFYnvq4O5b+khH8WyRkakDPmgU0UPOY6iObl4q/FNqkAoSomgFlVjs1zUNA3tC0+qowosh2MNgET8TdQDNKC8nBszRTxriE81iyELV2WyG+MVURZdYNmsv7l2GyL3wT9VMzpLoR40vpVAavWjKk8RzDue36KZcq9KqzyxdnycXyLPivJW9XiPsiOfbN8j9Z8IAKKNgyjUZTZWsNQaJhVmhZf/hj7HGJ+RX3x+p99cyx7VPSslBoWPxRdRmlSu6FVFi0Gg1Vll14E3Cuc2jhIMJqPfVRsVum2cIyzpjxc8l2tiH6betYd77jElmnE80ddlnI9waIvI9S0xKeM6RuhYecPkfN/uCO/Pg=
+  app: stormy-brushlands-28444
+  on:
+    repo: mellansquare/rails-4-in-action-2
