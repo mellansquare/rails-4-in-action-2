@@ -1,5 +1,5 @@
 language: ruby
-rvm: 2.3.4p301
+rvm: 2.3.4
 script: bundle exec rspec
 before_install:
 - export DISPLAY=.99.0
