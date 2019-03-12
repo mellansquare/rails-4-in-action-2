@@ -71,4 +71,5 @@ group :test do
   gem 'geckodriver-helper'
   gem 'rubocop-rspec'
   gem 'selenium-webdriver'
+  gem 'factory_girl', '~> 4.5'
 end
