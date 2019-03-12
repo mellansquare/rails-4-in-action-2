@@ -36,5 +36,6 @@ class Ticket < ActiveRecord::Base
   def author_watches_me
     if author.present? && !self.watchers.include?(author)
       self.watchers << author
+    end
   end
 end

@@ -50,7 +50,7 @@ GEM
       io-like (~> 0.3.0)
     arel (6.0.4)
     ast (2.4.0)
-    autoprefixer-rails (9.4.10)
+    autoprefixer-rails (9.4.10.2)
       execjs
     bcrypt (3.1.12)
     binding_of_caller (0.8.0)
@@ -81,7 +81,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.1.4)
+    concurrent-ruby (1.1.5)
     crass (1.0.4)
     database_cleaner (1.7.0)
     debug_inspector (0.0.3)
@@ -105,8 +105,6 @@ GEM
     factory_bot_rails (5.0.1)
       factory_bot (~> 5.0.0)
       railties (>= 4.2.0)
-    factory_girl (4.9.0)
-      activesupport (>= 3.0.0)
     ffi (1.10.0)
     fission (0.5.0)
       CFPropertyList (~> 2.2)
@@ -450,7 +448,6 @@ DEPENDENCIES
   devise
   email_spec
   factory_bot_rails
-  factory_girl (~> 4.5)
   fog
   fog-aws
   font-awesome-rails
