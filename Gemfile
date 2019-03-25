@@ -71,5 +71,4 @@ group :test do
   gem 'geckodriver-helper'
   gem 'rubocop-rspec'
   gem 'selenium-webdriver'
-  gem 'factory_bot_rails'
 end

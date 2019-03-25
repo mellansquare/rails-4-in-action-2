@@ -10,6 +10,8 @@ RSpec.feature 'Users can delete unwanted tags from a ticket' do
   before do
     login_as(user)
     assign_role!(user, :manager, project)
+    sleep(3)
+    
     visit project_ticket_path(project, ticket)
   end
 
