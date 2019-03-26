@@ -14,7 +14,12 @@ RSpec.feature 'Users can delete unwanted tags from a ticket' do
   end
 
   scenario 'successfully', js: true do
+<<<<<<< HEAD
     within tag('ThisTagMustDie') do
+=======
+    visit project_ticket_path(project, ticket)
+    within tag('#ThisTagMustDie') do
+>>>>>>> parent of 10088c8... add long sleep in deleting tags spec
       click_link 'remove'
     end
     expect(page).to_not have_content 'ThisTagMustDie'
