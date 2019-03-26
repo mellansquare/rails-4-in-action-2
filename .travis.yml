@@ -1,14 +1,10 @@
 language: ruby
-<<<<<<< HEAD
 rvm: 2.3.4
-script: bundle exec rake spec
-=======
-rvm: 2.3.4p301
 script: bundle exec rspec
->>>>>>> parent of e50cec0... Adding deploy support to Travis
 before_install:
 - export DISPLAY=:99.0
 - sh -e /etc/init.d/xvfb start
+- gem update --system
 deploy:
   provider: heroku
   api_key:
