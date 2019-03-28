@@ -70,4 +70,5 @@ group :test do
   gem 'geckodriver-helper'
   gem 'rubocop-rspec'
   gem 'selenium-webdriver'
+  gem 'rspec-retry'
 end
