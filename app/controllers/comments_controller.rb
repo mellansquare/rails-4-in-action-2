@@ -16,6 +16,8 @@ class CommentsController < ApplicationController
     end
   end
 
+# try and get this damn travis to work
+
   private
 
   def set_ticket
