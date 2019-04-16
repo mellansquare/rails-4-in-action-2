@@ -73,12 +73,12 @@ Rails.application.configure do
     address:        ENV['MAILGUN_SMTP_SERVER'],
     user_name:      ENV['MAILGUN_SMTP_LOGIN'],
     password:       ENV['MAILGUN_SMTP_PASSWORD'],
-    domain:         "https://stormy-brushlands-28444.herokuapp.com/",
+    domain:         host,
     authentication: :plain,
   }
   
   config.action_mailer.default_url_options = {
-    host: host
+    host: "https://stormy-brushlands-28444.herokuapp.com/"
   }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
