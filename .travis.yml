@@ -15,4 +15,3 @@ deploy:
   app: stormy-brushlands-28444
   on:
     repo: mellansquare/rails-4-in-action-2
-  
