@@ -28,38 +28,34 @@ gem 'devise'
 gem 'font-awesome-rails'
 gem 'pundit'
 gem 'simple_form'
-gem 'fog'
 gem 'fog-aws'
 gem 'bundler', '~> 1.17', '>= 1.17.3'
+gem 'searcher', github: 'radar/searcher'
+gem "active_model_serializers"
+gem 'sinatra'
 
 group :production do
   gem 'pg', '~> 0.20'
   gem 'rails_12factor'
+  gem 'puma'
 end
-
-gem 'puma'
-gem 'searcher', github: 'radar/searcher'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
 # Use Unicorn as the app server
 # gem 'unicorn'
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
   gem 'rspec-rails'
-end
-
-group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem 'activesupport', '>= 4.2.0'
 end
 
 group :test do
@@ -68,7 +64,7 @@ group :test do
   gem 'email_spec'
   gem 'factory_bot_rails'
   gem 'geckodriver-helper'
-  gem 'rubocop-rspec'
+  gem 'rubocop-performance'
   gem 'selenium-webdriver'
   gem 'rspec-retry'
 end
