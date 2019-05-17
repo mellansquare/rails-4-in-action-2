@@ -4,6 +4,10 @@ script: bundle exec rspec
 before_install:
 - export DISPLAY=:99.0
 - gem update --system
+env:
+- MOZ_HEADLESS=1
+addons:
+  firefox: latest
 deploy:
   provider: heroku
   api_key:
