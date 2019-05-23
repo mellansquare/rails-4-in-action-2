@@ -50,7 +50,6 @@ end
 group :development, :test do
   gem 'rspec-rails'
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
@@ -66,4 +65,5 @@ group :test do
   gem 'rubocop-performance'
   gem 'selenium-webdriver'
   gem 'rspec-retry'
+  gem 'web-console', '~> 2.0'
 end
