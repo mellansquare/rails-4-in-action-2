@@ -56,6 +56,8 @@ group :development, :test do
   gem 'spring'
 end
 
+  gem 'web-console', '~> 2.0', group: :development
+
 group :test do
   gem 'capybara'
   gem 'database_cleaner'
@@ -65,5 +67,4 @@ group :test do
   gem 'rubocop-performance'
   gem 'selenium-webdriver'
   gem 'rspec-retry'
-  gem 'web-console', '~> 2.0'
 end
